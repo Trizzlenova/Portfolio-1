@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
@@ -23,6 +24,9 @@ export default function Header(props) {
         </Link>
         <Link to="/projects">
           <div>PROJECTS</div>
+        </Link>
+        <Link to="/contact">
+          <div>CONTACT</div>
         </Link>
       </nav>
     </header>

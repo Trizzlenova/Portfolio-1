@@ -1,3 +1,13 @@
+import React from 'react';
+import '../App.css';
+
 export default function Footer(props) {
-    return <h1>Footer</h1>;
-  }
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <h1>Created by Jessica Figueroa</h1>
+        <p>© {new Date().getFullYear()} All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}
