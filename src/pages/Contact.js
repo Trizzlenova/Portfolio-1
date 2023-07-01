@@ -6,7 +6,7 @@ const Contact = () => {
 
   return (
     <div>
-      <h1>Feel free to check out my Github page as well.</h1>
+      <h1>Feel free to contact me by email or through LinkedIn. Check out my Github page as well.</h1>
       <p>Email: J_caetana@yahoo.com</p>
       <p>Github: <a href={githubURL} target="_blank" rel="noopener noreferrer">{githubURL}</a></p>
       <p>LinkedIn: <a href={`https://${linkedInURL}`} target="_blank" rel="noopener noreferrer">{linkedInURL}</a></p>

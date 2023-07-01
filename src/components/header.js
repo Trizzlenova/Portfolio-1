@@ -1,34 +1,18 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-export default function Header(props) {
-  //inline style for the nav tag
-  const navStyle = {
-    display: "flex",
-    justifyContent: "space-around",
-    border: "3px solid black",
-    padding: "8px",
-    width: "90%",
-    margin: "auto",
-  };
-
+const Header = () => {
   return (
-    <header>
-      <h1>My Portfolio Page</h1>
-      <nav style={navStyle}>
-        <Link to="/">
-          <div>HOME</div>
-        </Link>
-        <Link to="/about">
-          <div>ABOUT</div>
-        </Link>
-        <Link to="/projects">
-          <div>PROJECTS</div>
-        </Link>
-        <Link to="/contact">
-          <div>CONTACT</div>
-        </Link>
+    <header className="header">
+      <h1 className="header__logo">My Portfolio Page</h1>
+      <nav className="header__nav">
+        <Link to="/" className="header__nav-item">HOME</Link>
+        <Link to="/about" className="header__nav-item">ABOUT</Link>
+        <Link to="/projects" className="header__nav-item">PROJECTS</Link>
+        <Link to="/contact" className="header__nav-item">CONTACT</Link>
       </nav>
     </header>
   );
-}
+};
+
+export default Header;
