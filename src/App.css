@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -38,13 +27,14 @@
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: black;
+  color: white;
   padding: 10px;
 }
 
 .header__logo {
   font-size: 24px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .header__nav {
@@ -53,9 +43,23 @@
 }
 
 .header__nav-item {
-  color: #333;
-  margin-left: 10px;
-  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.header__nav-item:hover {
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav-item {
+    margin: 5px 0;
+  }
 }
 
 .footer {
@@ -75,4 +79,51 @@
 .footer p {
   font-size: 12px;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer h1 {
+    font-size: 16px;
+  }
+}
+
+.project-image {
+  width: 400px;
+  height: auto;
+}
+
+.home-heading {
+  padding-top: 20px;
+}
+
+.github-button {
+  margin-left: 30px;
+  margin-right: 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: black;
+  color: aqua;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #00a0d8;
+}
+
+.live-site-button {
+  margin-right: 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: black;
+  color: aqua;
+  transition: background-color 0.3s ease;
+}
+
+.live-site-button:hover {
+  background-color: #00a0d8;
 }
