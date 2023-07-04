@@ -90,11 +90,6 @@
   }
 }
 
-.project-image {
-  width: 400px;
-  height: auto;
-}
-
 .home-heading {
   color: black;
   font-size: 30px;
@@ -145,48 +140,99 @@
   z-index: -1;
 } 
 
-.github-button {
-  margin-left: 30px;
-  margin-right: 15px;
-  border-radius: 20px;
-  font-size: 16px;
-  padding: 10px 20px;
-  background-color: black;
-  color: aqua;
-  transition: background-color 0.3s ease;
+.projects-page {
+  background-color: rgb(132, 141, 138);
+  min-height: 100vh;
+  padding-top: 50px;
 }
 
-.github-button:hover {
-  background-color: #00a0d8;
+.project-slider {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
 }
 
+.project-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.9s ease;
+}
+
+.project-slide.active {
+  opacity: 1;
+}
+
+.slider-images {
+  width: 500px;
+  height: 300px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-content {
+  position: absolute;
+  top: 20%; 
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  padding-top: 20px;
+  /* position: absolute;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  padding-top: 20px; */
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.github-button,
 .live-site-button {
-  margin-right: 15px;
-  border-radius: 20px;
-  font-size: 16px;
-  padding: 10px 20px;
-  background-color: black;
-  color: aqua;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
 }
 
-.live-site-button:hover {
+.github-button:hover,
+.live-site-button:hover  {
   background-color: #00a0d8;
-}
-  
-
-.contact-container {
-  background-size: cover;
-  background-position: center;
-}
-
-@media (max-width: 768px) {
-  .contact-container {
-   
-  }
 }
 
 .contact-page {
+  background-color: #61dafb;
   background-size: 900px 800px;
   background-repeat: no-repeat;
   background-position: center;
