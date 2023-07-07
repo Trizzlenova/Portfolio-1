@@ -220,15 +220,23 @@
   justify-content: center;
 }
 
-.github-button,
+.github-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+}
+
 .live-site-button {
   display: inline-block;
   padding: 8px 16px;
   margin-right: 10px;
 }
 
-.github-button:hover,
-.live-site-button:hover  {
+.github-button:hover {
+  background-color: #00a0d8;
+}
+
+.live-site-button:hover {
   background-color: #00a0d8;
 }
 

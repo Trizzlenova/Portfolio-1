@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import "../App.css";
 import coffeeImage from "../images/coffeeApp/home.jpeg";
 import toDoImage from "../images/toDoApp/home.jpeg";
-import "../App.css";
+
 
 export default function Projects(props) {
   const [projects, setProjects] = useState([]);
@@ -30,15 +31,6 @@ export default function Projects(props) {
     }
   }, [projects]);
 
-  useEffect(() => {
-    console.log("Projects:", projects);
-    console.log("Current Index:", currentIndex);
-  }, [projects, currentIndex]);
-
-  const handleLiveSiteClick = (liveURL) => {
-    window.open(liveURL, "_blank");
-  };
-
   const loaded = () => {
     return (
       <div className="project-slider">
@@ -49,30 +41,25 @@ export default function Projects(props) {
           >
             <div className="project-content">
               <h1 className="project-title">{project.name}</h1>
-            </div>
-            <div className="image-container">
               <img
                 src={project.name === "best-to-do-app" ? toDoImage : coffeeImage}
-                alt={project.name === "best-to-do-app" ? "To Do App" : "Coffee App"}
+                alt={project.name}
                 className="project-image"
               />
-            </div>
-            <div className="project-buttons">
-              <a href={project.git} target="_blank" rel="noopener noreferrer">
-                <button className="github-button">Github</button>
-              </a>
-              <button
-                className="live-site-button"
-                onClick={() => handleLiveSiteClick(project.live)}
-              >
-                Live Site
-              </button>
+              <div className="project-buttons">
+                <a href={project.git} target="_blank" rel="noopener noreferrer">
+                  <button className="github-button">Github</button>
+                </a>
+                <a href={project.live} target="_blank" rel="noopener noreferrer">
+                  <button className="live-site-button">Live Site</button>
+                </a>
+              </div>
             </div>
           </div>
         ))}
       </div>
     );
-  }
+  };
 
   return (
     <div className="projects-page">
@@ -80,6 +67,7 @@ export default function Projects(props) {
     </div>
   );
 }
+
 
 
 
