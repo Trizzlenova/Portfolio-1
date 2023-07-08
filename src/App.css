@@ -90,16 +90,6 @@
   }
 }
 
-/* .home-heading {
-  color: black;
-  font-size: 30px;
-  padding-top: 10px;
-  padding-bottom: 50px;
-  padding-left: 200px;
-  padding-right: 200px;
-  text-align: left;
-} */
-
 .home-container {
   height: 100vh;
   position: relative;
@@ -263,7 +253,7 @@
 }
 
 .contact-page {
-  background-color: #61dafb;
+  background-color: #7dc0e1;
   background-size: 900px 800px;
   background-repeat: no-repeat;
   background-position: center;
