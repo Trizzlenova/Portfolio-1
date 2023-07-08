@@ -1,0 +1,14 @@
+[
+  {
+    "name": "best-to-do-app",  
+    "live": "https://best-to-do-app.herokuapp.com/",
+    "git": "https://github.com/Jessaroo/best-to-do-app",
+    "image": "./images/toDoApp/home.jpeg"
+  },
+  {
+    "name": "amazing-cups-of-coffee",
+    "live": "https://amazing-cups-of-coffee.netlify.app/recipe-detail/12770",
+    "git": "https://github.com/Jessaroo/amazing-cups-of-coffee",
+    "image": "./images/coffeeApp/home.jpeg"
+  }
+]
